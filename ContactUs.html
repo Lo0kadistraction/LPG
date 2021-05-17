@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+20210516 Christopher McMinn
+-->
+<!--
+    https://lo0kadistraction.github.io/ClassProject/
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <style>
+        @import url(Style.css);
+
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Staatliches&display=swap');
+    </style>
+
+    <title>Contact Us</title>
+
+</head>
+
+<body>
+
+    <header class="coverimg" id="home">
+        <!--this header is the background image and nav links-->
+        <div class="cover">
+            <span style="font-size:90px">LPG<br>A local physicians’ group</span>
+        </div>
+        <div class="topright">
+            <nav>
+                <ul>
+                    <li><a href="https://lo0kadistraction.github.io/ClassProject/">Home</a></li>
+                    <li><a href="Cardiology.html">Cardiology</a></li>
+                    <li><a href="Oncology.html">Oncology</a></li>
+                    <li><a href="Wellness.html">Wellness</a></li>
+                    <li><a href="Chiropractic.html">Chiropractic</a></li>
+                    <li><a href="Emergency.html">Emergency</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h2>
+        <!-- paragraph two header -->
+        Contact us
+    </h2>
+    <style>
+        body,
+        p {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+    <form action="mail.php" method="POST">
+        <p>Name</p> <input type="text" name="name">
+        <p>Email</p> <input type="text" name="email">
+        <p>Phone</p> <input type="text" name="phone">
+
+        <p>Request Phone Call:</p>
+        Yes:<input type="checkbox" value="Yes" name="call"><br />
+        No:<input type="checkbox" value="No" name="call"><br />
+
+        <p>Website</p> <input type="text" name="website">
+
+        <p>Priority</p>
+        <select name="priority" size="1">
+            <option value="Low">Low</option>
+            <option value="Normal">Normal</option>
+            <option value="High">High</option>
+            <option value="Emergency">Emergency</option>
+        </select>
+        <br />
+
+        <p>Type</p>
+        <select name="type" size="1">
+            <option value="General">General</option>
+            <option value="Cardiology">Cardiology</option>
+            <option value="Oncology">Oncology</option>
+            <option value="Wellness">Wellness</option>
+            <option value="Chiropractic">Chiropractic</option>
+            <option value="Emergency">Emergency</option>
+        </select>
+        <br />
+
+        <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+        <input type="submit" value="Send"><input type="reset" value="Clear">
+    </form>
+
+</body>
+
+</html>
